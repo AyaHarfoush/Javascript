@@ -1,0 +1,33 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+#task-input {
+    padding: 6px;
+    font-size: 14px;
+}
+
+#add-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+ul {
+    margin-top: 15px;
+}
+
+li {
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+li button {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+}
