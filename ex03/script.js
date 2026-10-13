@@ -7,14 +7,16 @@ const resetBtn = document.getElementById("reset-btn");
 
 function updateDisplay() {
     counterDisplay.textContent = count;
-    
-    if (count >= 0) {
-        counterDisplay.classList.remove("negative");
+    counterDisplay.classList.remove("positive","negative","reset");
+    if (count > 0) {
         counterDisplay.classList.add("positive");
-    } else {
-        counterDisplay.classList.remove("positive");
+    } else if (count <0) {
         counterDisplay.classList.add("negative");
-    }
+     
+    } else {
+        counterDisplay.classList.add("reset");
+}
+
 }
 
 incrementBtn.addEventListener("click", function() {
